@@ -3,11 +3,12 @@ import Layout from '@/components/Layout';
 import { mockDocuments } from '@/data/mockData';
 
 interface PageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
-export default function DocumentDetail({ params }: PageProps) {
-  const document = mockDocuments.find(doc => doc.id === params.id);
+export default async function DocumentDetail({ params }: PageProps) {
+  const { id } = await params;
+  const document = mockDocuments.find(doc => doc.id === id);
 
   if (!document) {
     notFound();

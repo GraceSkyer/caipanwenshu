@@ -133,7 +133,7 @@ export const mockDocuments: Document[] = [
 ];
 
 export const friendLinks: FriendLink[] = [
-  { name: '中国才判文书网', url: 'https://wenshu.court.gov.cn' },
+  { name: '中国裁判文书网', url: 'https://wenshu.court.gov.cn' },
   { name: '最高人民法院', url: 'http://www.court.gov.cn' },
   { name: '中国法院网', url: 'https://www.chinacourt.org' },
   { name: '12309中国检察网', url: 'https://www.12309.gov.cn' },
